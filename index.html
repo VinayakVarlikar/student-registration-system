@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Student Registration System with JavaScript and Local Storage"
+    />
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <main class="container">
+      <header>
+        <h1>Student Registration System</h1>
+        <p class="description">
+          Register students and manage their details. Add, edit, delete, and
+          persist records in your browser using local storage.
+        </p>
+      </header>
+
+      <section aria-labelledby="registration-heading">
+        <h2 id="registration-heading">Register a New Student</h2>
+        <form id="registrationForm">
+          <label for="name">Student Name</label>
+          <input type="text" id="name" placeholder="NAME" required />
+
+          <label for="studentId">Student ID</label>
+          <input type="text" id="studentId" placeholder="ID" required />
+
+          <label for="email">Email ID</label>
+          <input type="email" id="email" placeholder="EMAIL" required />
+
+          <label for="contact">Contact No</label>
+          <input type="text" id="contact" placeholder="CONTACT" required />
+
+          <button type="submit">Register</button>
+        </form>
+      </section>
+
+      <section aria-labelledby="records-heading">
+        <h2 id="records-heading">Registered Students</h2>
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>ID</th>
+                <th>Email</th>
+                <th>Contact</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="studentTableBody"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
