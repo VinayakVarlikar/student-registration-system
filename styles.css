@@ -83,3 +83,13 @@ th {
 .action-btns button {
   margin-right: 8px;
 }
+
+a {
+  display: block;
+  text-align: center;
+  margin-top: 4px;
+}
+
+a:hover {
+  color: white;
+}
